@@ -11,7 +11,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
+import { MatIconModule } from '@angular/material/icon'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +25,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
